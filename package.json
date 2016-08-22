@@ -1,6 +1,6 @@
 {
   "name": "@nathanfaucett/sha1",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "sha1 for the browser and node.js",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "@nathanfaucett/fast_slice": "^0.0.1",
     "@nathanfaucett/hex_encoding": "^0.0.1",
     "@nathanfaucett/is_array": "^0.0.1",
-    "@nathanfaucett/is_function": "^0.0.1",
+    "@nathanfaucett/is_array_like": "0.0.2",
     "@nathanfaucett/is_string": "^0.0.1",
     "@nathanfaucett/utf8_encoding": "^0.0.1",
     "@nathanfaucett/words_encoding": "^0.0.1"

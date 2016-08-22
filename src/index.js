@@ -1,6 +1,5 @@
-var isArray = require("@nathanfaucett/is_array"),
+var isArrayLike = require("@nathanfaucett/is_array_like"),
     isString = require("@nathanfaucett/is_string"),
-    isFunction = require("@nathanfaucett/is_function"),
     fastSlice = require("@nathanfaucett/fast_slice"),
     hex = require("@nathanfaucett/hex_encoding"),
     utf8 = require("@nathanfaucett/utf8_encoding"),
@@ -32,9 +31,9 @@ function sha1(message) {
 
     if (isString(String)) {
         message = utf8.stringToBytes(message);
-    } else if (typeof(Buffer) !== "undefined" && isFunction(Buffer.isBuffer) && Buffer.isBuffer(message)) {
-        message = fastSlice(message);
-    } else if (!isArray(message)) {
+    } else if (isArrayLike(message)) {
+        message = fastSlice(message, 0);
+    } else {
         message = message.toString();
     }
 
