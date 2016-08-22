@@ -1,6 +1,6 @@
 {
   "name": "@nathanfaucett/sha1",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "sha1 for the browser and node.js",
   "repository": {
     "type": "git",
